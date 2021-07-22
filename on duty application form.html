@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> On Duty Application Form</title>
+</head> 
+<body>
+
+  <div id="menubar">
+    <ul><li>Home</li>
+      <li>Academic</li>
+      <li>Examination</li>
+      <li>Hostel</li>
+      <li>E-Learning</li>
+      <li>Contact us</li>
+      <li>About us</li>
+    </ul>
+    </div>
+<form>
+    <div id="OD application form">
+    <table cellspacing="2" align="center" cellpadding="8" border="0">
+        <tr>
+            <td>
+                On Duty Application Form for XYZ University
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Name:
+            </td>
+            <td>
+                <input type="text" placeholder="Name" name="">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Admission number:      
+            </td>
+            <td>
+                <input type="text,number" placeholder="Admission number" admissionnumber="">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Email:
+            </td>
+            <td>
+                <input type="mail" placeholder="Email" email="">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Phone number:
+            </td>
+            <td>
+                <select>
+                    <option>Please select</option>
+                    <option>+91</option>
+                </select>
+                <input type="Phone" placeholder="Phone number" phonenumber="">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Gender:
+            </td>
+            <td>
+                <input type="radio" name="Gender">Male
+                <input type="radio" name="Gender">Female
+                <input type="radio" name="Gender">Others
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Branch:
+            </td>
+            <td>
+                <input type="radio" name="Branch">CSE
+                <input type="radio" name="Branch">ECE
+                <input type="radio" name="Branch">EEE
+                <input type="radio" name="Branch">BioTech
+                <input type="radio" name="Branch">Mech
+                <input type="radio" name="Branch">AI
+                <input type="radio" name="Branch">Marine
+            <td>
+        </tr>
+        <tr>
+            <td align="right">
+                Year:
+            </td>
+            <td>
+                <select>
+                    <option>I</option>
+                    <option>II</option>
+                    <option>III</option>
+                    <option>IV</option>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                OD Type:  
+            </td>
+            <td>
+                <select>
+                    <option>Please Select</option>
+                    <option>Normal OD</option>
+                    <option>Special OD</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                OD date:
+            </td>
+            <td>
+                <input type="date" placeholder="from" ><input type="date" placeholder="to">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                OD reason:
+            </td>
+            <td>
+                <input type="text" placeholder="Reason" rows="8" cols="80">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <input type="reset" value="Clear Form" onclick="clearFunc()" id="res" class="btn" />
+                <input type="submit" value="Apply" class="btn" onclick="Apply()" />
+            </td>
+        </tr>
+        
+    </table>
+    </div>
+</form>
+</body>
+</html>
+<style>
+    body{background-color:#84bf76;}
+    #menubar{width:810px; margin-left:auto;  margin-right:auto; margin-top:0px; height:auto;}
+
+    ul {
+      text-transform:uppercase;
+      text-align: left;
+      display: inline;
+      margin: 0;
+      padding: 15px 4px 17px 0;
+      list-style: none;
+      -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    }
+    ul li {
+      font: bold 12px/18px sans-serif;
+      display: inline-block;
+      margin-right: -5px;
+      position: relative;
+      padding: 15px 20px;
+      background: #f7f7f7;
+      color:#6aa25d;
+      cursor: pointer;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+    }
+    ul li:hover {
+      background: #6aa25d;
+      color: #f7f7f7;
+      }
+    body
+    {
+	    margin:0px;
+	    background-color:#d5f1f1;
+	    background-image:url(image/background.jpg);
+	    color:#112015;
+	    font-family:Arial, Helvetica, sans-serif;
+    }
+    
+    #main{width:600px; height:auto; overflow:hidden; padding-bottom:20px; margin-left:auto; margin-right:auto; 
+    border-radius:5px; padding-left:10px; margin-top:1px; border-top:3px double #0f0f0f; 
+    border-bottom:3px double #0a0a0a; padding-top:20px;
+    }
+    
+    #main table{font-family:"Comic Sans MS", cursive;}
+    #main .tb{height:28px; width:230px; border:1px solid #2f95e9; color:#2f8cf7; font-weight:bold; border-left:5px solid #f7f7f7; opacity:0.9;}
+    
+    #main .tb:focus{height:28px; border:1px solid #488aec; outline:none; border-left:5px solid #f7f7f7;}
+
+    #main .btn{width:150px; height:32px; outline:none;  color:#f7f7f7; font-weight:bold; border:0px solid #45a7e7; 
+    text-shadow: 0px 0.5px 0.5px #fff; border-radius: 2px; font-weight: 600; color: #55a6f1; letter-spacing: 1px; 
+    font-size:14px; background-color:#f1f1f1; -webkit-transition: 1s; -moz-transition: 1s; transition: 1s;}
+  
+    #main .btn:hover{background-color:#46abd3; outline:none;  border-radius: 2px; color:#f1f1f1; border:1px solid #f1f1f1;
+    -webkit-transition: 1s; -moz-transition: 1s; transition: 1s; }
+</style>
